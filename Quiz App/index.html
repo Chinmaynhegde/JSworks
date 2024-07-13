@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <h1>Computer Science Quiz</h1>
+  <div class="select-container">
+    <label for="category">Select Category:</label>
+    <select id="category">
+      <option value="random">Random</option>
+      <option value="Linux">Linux</option>
+      <option value="DevOps">DevOps</option>
+      <option value="Docker">Docker</option>
+      <!-- <option value="Networking">Networking</option>
+      <option value="Programming">Programming</option>
+      <option value="Cloud">Cloud</option>
+      <option value="Kubernetes">Kubernetes</option> -->
+    </select>
+  </div>
+  <div class="select-container">
+    <label for="difficulty">Select Difficulty:</label>
+    <select id="difficulty">
+      <option value="random">Random</option>
+      <option value="easy">Easy</option>
+      <option value="medium">Medium</option>
+      <option value="hard">Hard</option>
+    </select>
+  </div>
+  <button id="start-btn">Start Quiz</button>
+  <p class="note">Note: Some questions may have multiple correct answers.</p>
+  <div class="quiz">
+    <h2 id="question">Question goes here</h2>
+    <div id="answer-buttons">
+      <button class="btn">Answer 1</button>
+      <button class="btn">Answer 2</button>
+      <button class="btn">Answer 3</button>
+      <button class="btn">Answer 4</button>
+    </div>
+    
+    <button id="next-btn">Next</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
